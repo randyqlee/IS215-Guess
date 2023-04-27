@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Guessing Game</h1>
+    <div id="game-container">
+      <div id="game-input">
+        <label for="category">Select a category:</label>
+        <select id="category">
+          <option value="animals">Animals</option>
+          <option value="colors">Colors</option>
+          <option value="fruits">Fruits</option>
+          <option value="countries">Countries</option>
+          <option value="philippine-cities">Philippine Cities</option>
+          <option value="movies">Movies</option>
+          <option value="sports">Sports</option>
+          <option value="musical-instruments">Musical Instruments</option>
+          <option value="planets">Planets</option>
+          <option value="foods">Foods</option>
+        </select>
+        <button id="start-button" onclick="startGame()">Start</button>
+        <p id="clue-display"></p>
+        <input type="text" id="guess-input" placeholder="Enter your guess...">
+        <button id="submit-guess" onclick="checkGuess()" disabled>Guess</button>
+        <p id="guess-count"></p>
+        <button id="restart-button" onclick="restartGame()">Restart</button> <!-- Added restart button -->
+      </div>
+      <div id="game-output">
+        <ul id="guess-list"></ul>
+        <p id="result-display"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

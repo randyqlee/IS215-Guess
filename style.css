@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #game-container {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #game-input {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #game-output {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  #category {
+    margin: 0 10px;
+    padding: 5px;
+  }
+  
+  #start-button,
+  #guess-button {
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #start-button:hover,
+  #guess-button:hover {
+    background-color: #3E8E41;
+  }
+  
+  #guess-input {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 70%;
+  }
+  
+  #guess-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #guess-list li {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #CCC;
+  }
+  
+  #result-display {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  #clue-display {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
