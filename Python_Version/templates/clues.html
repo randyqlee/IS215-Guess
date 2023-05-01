@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guessing Game</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>Guessing Game</h1>
+		<h2>Category: {{ category }}</h2>
+		<p>Here are your clues:</p>
+		<ul>
+			{% for clue in clues %}
+				<li>{{ clue }}</li>
+			{% endfor %}
+		</ul>
+		<form method="POST" action="{{ url_for('guess') }}">
+			<input type="hidden" name="category" value="{{ category }}">
+			<label for="guess">What's your guess?</label>
+			<input id="guess" name="guess" type="text" required>
+			<button type="submit">Guess</button>
+		</form>
+	</div>
+</body>
+</html>

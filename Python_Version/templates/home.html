@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guessing Game</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>Guessing Game</h1>
+		<form method="POST" action="{{ url_for('category') }}">
+			<label for="category">Choose a category:</label>
+			<select id="category" name="category">
+				{% for category in categories %}
+					<option value="{{ category }}">{{ category }}</option>
+				{% endfor %}
+			</select>
+			<button type="submit">Start game</button>
+		</form>
+	</div>
+</body>
+</html>
