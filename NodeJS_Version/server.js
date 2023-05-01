@@ -1,6 +1,7 @@
 // server.js
 const express = require('express');
 const path = require('path'); // Import the 'path' module
+const fetch = require('node-fetch');
 const app = express();
 const config = require('./config');
 const OPENAI_API_KEY = config.OPENAI_API_KEY;
