@@ -1,0 +1,23 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+select, input[type="text"] {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button {
+	padding: 5px;
+}

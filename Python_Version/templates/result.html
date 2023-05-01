@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guessing Game</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ category.capitalize() }} Guessing Game</h1>
+        <p>Word: {{ word }}</p>
+        <p>Clues:</p>
+        <ul>
+            {% for clue in clues %}
+            <li>{{ clue }}</li>
+            {% endfor %}
+        </ul>
+        <p>Your guess: {{ guess }}</p>
+        <h1>Result: {{ result }}</h1>
+
+        <button onclick="location.href='/'">Back to Main Page</button>
+    </div>
+</body>
+</html>

@@ -1,11 +1,11 @@
-//require('dotenv').config();
-//const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+require('dotenv').config();
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 
 //const OPENAI_API_KEY = require('./config');
 
 //insert your own private API KEY inside the '' marks
-const OPENAI_API_KEY = '';
+//const OPENAI_API_KEY = '';
 
 const categoryButtons = document.querySelectorAll('.category-button');
 const startButton = document.getElementById('start-button');
